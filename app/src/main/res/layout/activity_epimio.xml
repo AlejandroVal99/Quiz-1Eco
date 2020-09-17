@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EpimioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="365dp"
+        android:layout_height="505dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="321dp"
+            android:layout_height="48dp"
+            android:text="Nexo epidemiológico"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="332dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="24dp"
+            android:text="Elige las opciones que apliquen a tu caso:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <CheckBox
+            android:id="@+id/cB_SalTra"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Soy trabajdor de la salud"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cB_viaNal" />
+
+        <CheckBox
+            android:id="@+id/cB_contaCov"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="Estuvo en contacto con alguien que tiene coronavirus"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <CheckBox
+            android:id="@+id/cB_viaInter"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Hice un viaje internacional en los ultimos 3 meses"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cB_contaCov" />
+
+        <CheckBox
+            android:id="@+id/cB_viaNal"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Hice un viaje nacional en los ultimos 3 meses"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cB_viaInter" />
+
+        <CheckBox
+            android:id="@+id/cB_NigunaAnt"
+            android:layout_width="304dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:text="Ninguna de las anteriores"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cB_SalTra" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/bt_nexEpi"
+        android:layout_width="321dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
